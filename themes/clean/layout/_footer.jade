@@ -1,0 +1,27 @@
+// Footer
+div(class='container')
+    div(class='row')
+        div(class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1')
+            ul(class='list-inline text-center')
+                li
+                    a(href= config.social.twitter)
+                        span(class='fa-stack fa-lg')
+                            i(class='fa fa-circle fa-stack-2x')
+                            i(class='fa fa-twitter fa-stack-1x fa-inverse')
+                li
+                    a(href= config.social.facebook)
+                        span(class='fa-stack fa-lg')
+                            i(class='fa fa-circle fa-stack-2x')
+                            i(class='fa fa-facebook fa-stack-1x fa-inverse')
+                li
+                    a(href= config.social.github)
+                        span(class='fa-stack fa-lg')
+                            i(class='fa fa-circle fa-stack-2x')
+                            i(class='fa fa-github fa-stack-1x fa-inverse')
+            p(class='copyright text-muted')= config.copyright
+            | &middot; Published with
+            a(href='https://hexo.io/')  Hexo
+            .space
+            if config.feed && config.feed.path
+              | &middot;
+              a(href= config.feed.path)  RSS Feed

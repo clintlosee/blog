@@ -1,0 +1,14 @@
+doctype html
+html(lang='en-us')
+  head
+    include _head
+    include _mixins
+  body(itemscope, itemtype='https://schema.org/WebPage')
+    header(itemscope, itemtype='https://schema.org/WPHeader')
+      include _nav
+      include _header
+    main(itemscope, itemtype='https://schema.org/Blog')
+      include _content
+    footer(itemscope, itemtype='https://schema.org/WPFooter')
+        include _footer
+    //include _scripts
