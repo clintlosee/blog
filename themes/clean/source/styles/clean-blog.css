@@ -393,6 +393,308 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
+img {
+    width: 100%;
+}
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+.article-entry pre, .article-entry .highlight {
+    background: #2d2d2d;
+    margin: 0 -20px;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 0;
+    overflow: auto;
+    color: #ccc;
+    line-height: 22.400000000000002px;
+}
+.article-entry .highlight table {
+    margin: 0;
+    width: auto;
+}
+.article-entry .highlight .line {
+    height: 22.400000000000002px;
+}
+.article-entry table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.article-entry p, .article-entry table {
+    line-height: 1.6em;
+    margin: 1.6em 0;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    vertical-align: middle;
+}
+.article-entry .highlight td {
+    border: none;
+    padding: 0;
+}
+.article-entry td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.article-entry .highlight pre {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.article-entry pre, .article-entry code {
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+
+/* Syntax Highlighting */
+pre .comment,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f99157;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #c9c;
+}
+
+/* Stylus for code styling
+
+// https://github.com/chriskempson/tomorrow-theme
+highlight-background = #2d2d2d
+highlight-current-line = #393939
+highlight-selection = #515151
+highlight-foreground = #cccccc
+highlight-comment = #999999
+highlight-red = #f2777a
+highlight-orange = #f99157
+highlight-yellow = #ffcc66
+highlight-green = #99cc99
+highlight-aqua = #66cccc
+highlight-blue = #6699cc
+highlight-purple = #cc99cc
+font-size = 14px
+line-height = 1.6em
+
+$code-block
+  background: #2d2d2d
+  margin: 0 article-padding * -1
+  padding: 15px article-padding
+  border-style: solid
+  border-color: color-border
+  border-width: 1px 0
+  overflow: auto
+  color: highlight-foreground
+  line-height: font-size * line-height
+  --------------------------------------------
+  background: #2d2d2d;
+  margin: 0 -20px;
+  padding: 15px 20px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0;
+  overflow: auto;
+  color: #ccc;
+  line-height: 22.400000000000002px;
+
+$line-numbers
+  color: #666
+  font-size: 0.85em
+
+.article-entry
+  pre, code
+    font-family: font-mono
+  code
+    background: color-background
+    text-shadow: 0 1px #fff
+    padding: 0 0.3em
+  pre
+      background: #2d2d2d;
+      margin: 0 -20px;
+      padding: 15px 20px;
+      border-style: solid;
+      border-color: #ddd;
+      border-width: 1px 0;
+      overflow: auto;
+      color: #ccc;
+      line-height: 22.400000000000002px;
+    code
+      background: none
+      text-shadow: none
+      padding: 0
+  .highlight
+      background: #2d2d2d;
+      margin: 0 -20px;
+      padding: 15px 20px;
+      border-style: solid;
+      border-color: #ddd;
+      border-width: 1px 0;
+      overflow: auto;
+      color: #ccc;
+      line-height: 22.400000000000002px;
+    pre
+      border: none
+      margin: 0
+      padding: 0
+    table
+      margin: 0
+      width: auto
+    td
+      border: none
+      padding: 0
+    figcaption
+      clearfix()
+      font-size: 0.85em
+      color: highlight-comment
+      line-height: 1em
+      margin-bottom: 1em
+      a
+        float: right
+    .gutter pre
+      @extend $line-numbers
+      text-align: right
+      padding-right: 20px
+    .line
+      height: font-size * line-height
+  .gist
+    margin: 0 article-padding * -1
+    border-style: solid
+    border-color: color-border
+    border-width: 1px 0
+    background: highlight-background
+    padding: 15px article-padding 15px 0
+    .gist-file
+      border: none
+      font-family: font-mono
+      margin: 0
+      .gist-data
+        background: none
+        border: none
+        .line-numbers
+          @extend $line-numbers
+          background: none
+          border: none
+          padding: 0 20px 0 0
+        .line-data
+          padding: 0 !important
+      .highlight
+        margin: 0
+        padding: 0
+        border: none
+      .gist-meta
+        background: highlight-background
+        color: highlight-comment
+        font: 0.85em font-sans
+        text-shadow: 0 0
+        padding: 0
+        margin-top: 1em
+        margin-left: article-padding
+        a
+          color: color-link
+          font-weight: normal
+          &:hover
+            text-decoration: underline
+
+pre
+  .comment
+  .title
+    color: highlight-comment
+  .variable
+  .attribute
+  .tag
+  .regexp
+  .ruby .constant
+  .xml .tag .title
+  .xml .pi
+  .xml .doctype
+  .html .doctype
+  .css .id
+  .css .class
+  .css .pseudo
+    color: highlight-red
+  .number
+  .preprocessor
+  .built_in
+  .literal
+  .params
+  .constant
+    color: highlight-orange
+  .class
+  .ruby .class .title
+  .css .rules .attribute
+    color: highlight-green
+  .string
+  .value
+  .inheritance
+  .header
+  .ruby .symbol
+  .xml .cdata
+    color: highlight-green
+  .css .hexcolor
+    color: highlight-aqua
+  .function
+  .python .decorator
+  .python .title
+  .ruby .function .title
+  .ruby .title .keyword
+  .perl .sub
+  .javascript .title
+  .coffeescript .title
+    color: highlight-blue
+  .keyword
+  .javascript .function
+    color: highlight-purple
+*/
