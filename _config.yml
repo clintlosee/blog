@@ -4,8 +4,8 @@
 
 # Site
 title: DevThirty5
-subtitle: Web Development Blog
-description: This is the page description
+subtitle: DevThirty5 Blog
+description: Web Development Ponderings of Clint Losee
 author: Clint Losee
 language: en
 timezone: America/Denver
@@ -13,7 +13,7 @@ copyright: Copyright 2016 DevThirty5
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://localhost:4000
 root: /
 permalink: :year/:month/:title/
 permalink_defaults:
@@ -66,6 +66,38 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: clean
 
+disqus_shortname:
+nofollow:
+    enable: true
+    exclude:
+    - clintlosee.com
+    - www.clintlosee.com
+    - theflyfishingbasics.com
+    - www.theflyfishingbasics.com
+sitemap:
+    path: sitemap.xml
+html_minifier:
+    enable: true
+    exclude:
+css_minifier:
+    enable: true
+    exclude:
+    #- *.min.css
+js_minifier:
+    enable: false
+    mangle: true
+    output:
+    compress:
+    exclude:
+    #- *.min.js
+image_minifier:
+    enable: false
+    interlaced: false
+    multipass: false
+    optimizationLevel: 2
+    pngquant: false
+    progressive: true
+
 feed:
     type: atom
     path: atom.xml
@@ -80,4 +112,7 @@ social:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+    type:
+    repo:
+    branch:
+    message:

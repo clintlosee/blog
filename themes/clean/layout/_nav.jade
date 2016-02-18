@@ -8,6 +8,8 @@ nav(itemscope, itemtype='https://schema.org/SiteNavigationElement', class='navba
                 span(class='icon-bar')
                 span(class='icon-bar')
                 span(class='icon-bar')
+            a(href= config.root)
+                img(src= theme.logo, alt= config.title, title= config.title, class='logo navbar-logo')
             a(href= config.root, alt= config.title, title= config.title, itemprop='headline', class='navbar-brand')= config.title
 
         // Collect the nav links, forms, and other content for toggling

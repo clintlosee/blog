@@ -4,7 +4,6 @@ if is_home()
   div.container
       div.row
         div(class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1')
-
           each post in site.posts.sort('date', 'desc').toArray()
             - var reading_length = Math.ceil(post.content.replace(/[^a-zA-Z\s]/g, '').split(/[\s]+/).length / 250)
             div.post-preview
@@ -12,14 +11,14 @@ if is_home()
                     h2(class='post-title', itemprop='headline')= post.title
                     h3.post-subtitle
                 p.post-meta
-                  | Published on
-                  time(itemprop='datePublished', datetime= post.date.toISOString())= full_date(new Date(post.date), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(post.date), 'H:mm')
-                  | , #{reading_length} min read
+                    | Published on
+                    time(itemprop='datePublished', datetime= post.date.toISOString())= full_date(new Date(post.date), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(post.date), 'H:mm')
+                    | , #{reading_length} min read
                 p(itemprop='text').post-excerpt= post.intro ? post.intro : post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 220)
+                hr
 
 //- articles page
 if is_page() && page.title.toLowerCase() == 'articles'
-    h1(itemprop='headline', class='page-title text-center')= page.title
     div.container
         div.row
           div(class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1')
@@ -45,14 +44,17 @@ if is_page() && page.title.toLowerCase() == 'articles'
               | </ul>
 
 else if is_page()
-  article.full
-    h1(itemprop='headline')= page.title
-    if page.updated
-      span.post-meta
-        | Last updated on
-        time(itemprop='dateModified', datetime= page.date.toISOString())= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')
-    != page.content
-  //include _comments
+    div.container
+        div.row
+            div(class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1')
+                article.full
+                    != page.content
+                    if page.updated
+                        span
+                            em.post-meta
+                                | Last updated on
+                                time(itemprop='dateModified', datetime= page.date.toISOString())= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')
+                        include _comments
 
 else if is_post()
   article
@@ -68,4 +70,5 @@ else if is_post()
                     | Last updated on
                     time(itemprop='dateModified', datetime= page.date.toISOString())= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')
                 != page.content
-              //include _comments
+                hr
+                include _comments

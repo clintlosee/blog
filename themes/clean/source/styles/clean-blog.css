@@ -30,7 +30,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #FF6600;
 }
 a img:hover,
 a img:focus {
@@ -121,7 +121,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #FF6600;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -150,6 +150,10 @@ hr.small {
 }
 .bgImage {
     background-image: url('../img/home-bg.jpg');
+}
+.bgImagePost {
+    /*background-image: url('../img/post-bg.jpg');*/
+    background-image: url('../img/macbook-bg.jpg');
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -219,7 +223,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #FF6600;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -233,8 +237,7 @@ hr.small {
 }
 .post-preview > .post-meta {
   color: #808080;
-  font-size: 18px;
-  font-style: italic;
+  font-size: .8em;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
@@ -243,7 +246,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #FF6600;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -277,6 +280,7 @@ footer .copyright {
   font-size: 14px;
   text-align: center;
   margin-bottom: 0;
+  text-decoration: none;
 }
 .floating-label-form-group {
   font-size: 14px;
@@ -364,8 +368,10 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  /*background-color: #0085a1;
+  border: 1px solid #0085a1;*/
+  background-color: #FF6600;
+  border: 1px solid #FF6600;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -451,6 +457,20 @@ caption, th, td {
 }
 .article-entry pre, .article-entry code {
     font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+article .post-meta {
+    display: block;
+    margin-top: 4rem;
+    font-size: .7em;
+    color: #808080;
+    font-style: normal;
+}
+.logo {
+    width: 15%;
+}
+.logo.navbar-logo {
+    float: left;
+    padding-top: 10px;
 }
 
 /* Syntax Highlighting */

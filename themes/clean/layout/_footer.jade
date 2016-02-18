@@ -19,9 +19,14 @@ div(class='container')
                             i(class='fa fa-circle fa-stack-2x')
                             i(class='fa fa-github fa-stack-1x fa-inverse')
             p(class='copyright text-muted')= config.copyright
-            | &middot; Published with
-            a(href='https://hexo.io/')  Hexo
-            .space
-            if config.feed && config.feed.path
-              | &middot;
-              a(href= config.feed.path)  RSS Feed
+            div(class='col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1')
+                ul(class='list-inline text-center')
+                    li
+                        p
+                            small(class='text-muted copyright') Published with
+                                a(href='https://hexo.io/', class='text-muted copyright')  Hexo
+                    li
+                        if config.feed && config.feed.path
+                            p
+                                small
+                                    a(href= config.feed.path, class='text-muted copyright')  RSS Feed
