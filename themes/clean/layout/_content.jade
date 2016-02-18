@@ -63,12 +63,11 @@ else if is_post()
             div(class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 article-entry')
                 h1(itemprop='headline')= page.title
                 span.post-meta
-                  | Published on
+                  | Published on 
                   time(itemprop='datePublished', datetime= page.date.toISOString())= full_date(new Date(page.date), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.date), 'H:mm')
                   if page.updated
                     br
-                    | Last updated on
+                    | Last updated on 
                     time(itemprop='dateModified', datetime= page.date.toISOString())= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')
                 != page.content
-                hr
                 include _comments

@@ -2,7 +2,7 @@
 title: Mountain Getaway
 date: 2016-02-15 11:43:39
 intro: A test intro for the mountain getaway post.
-tags:
+category: CSS
 ---
 We had a great time!
 
