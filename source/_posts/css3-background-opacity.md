@@ -1,7 +1,8 @@
 ---
 title: CSS3 Background Opacity
 date: 2016-02-18 14:16:01
-category: CSS
+category:
+- CSS
 ---
 ![CSS3 Background Opacity](/images/css3-background-opacity.jpg)
 

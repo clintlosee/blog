@@ -453,7 +453,7 @@ caption, th, td {
 .article-entry .highlight pre {
     border: none;
     margin: 0;
-    padding: 0;
+    padding: 0 10px 0 0;
 }
 .article-entry pre, .article-entry code {
     font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
