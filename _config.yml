@@ -13,7 +13,7 @@ copyright: Copyright 2016 DevThirty5
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://localhost:4000
+url: http://clintlosee.github.io/blog
 root: /
 permalink: :year/:month/:title/
 permalink_defaults:
@@ -112,7 +112,7 @@ social:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-    type:
-    repo:
-    branch:
-    message:
+    type: git
+    repo: https://github.com/clintlosee/blog
+    branch: gh-pages
+    message: Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }})
