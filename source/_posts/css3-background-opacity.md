@@ -1,10 +1,14 @@
 ---
 title: CSS3 Background Opacity
-date: 2016-02-18 14:16:01
+date: 2015-10-19 01:16:01
+intro:
 category:
 - CSS
+tags:
+- Development
+- Front-End
 ---
-![CSS3 Background Opacity](/images/css3-background-opacity.jpg)
+![CSS3 Background Opacity](/blog/images/css3-background-opacity.jpg)
 
 Here's something that I came across recently that proved incredibly useful. Most CSS experts out there are already going to know this one, but for those of you that are just learning, here's a quick tip that could help you out in the long run.
 

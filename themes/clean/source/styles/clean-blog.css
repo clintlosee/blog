@@ -150,6 +150,8 @@ hr.small {
 }
 .bgImage {
     background-image: url('../img/home-bg.jpg');
+    /*background: url('../img/home-bg.jpg') center repeat fixed;
+    background-size: cover;*/
 }
 .bgImagePost {
     /*background-image: url('../img/post-bg.jpg');*/

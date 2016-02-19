@@ -93,3 +93,7 @@ node_modules
 ### Sass ###
 .sass-cache
 *.css.map
+
+# HEXO
+public/
+.deploy_git
