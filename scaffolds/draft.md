@@ -1,4 +1,6 @@
 ---
 title: {{ title }}
-tags:
+intro: {{ intro }}
+category: {{ category }}
+tags: {{ tags }}
 ---
