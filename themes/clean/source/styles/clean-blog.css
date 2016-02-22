@@ -163,7 +163,8 @@ hr.small {
 .bgImagePost {
     /*background-image: url('../img/post-bg.jpg');*/
     /*background-image: url('../img/macbook-bg.jpg');*/
-    background-image: url('../img/post-banner-bg.png');
+    /*background-image: url('../img/post-banner-bg.png');*/
+    background-image: url('../img/blogpost-banner.png');
 }
 .site-heading h1, .subheading {
     text-shadow: 0 3px 8px #000;
