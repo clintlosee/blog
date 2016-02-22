@@ -64,6 +64,13 @@ hr.small {
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
+    .logo {
+        width: 15%;
+    }
+    .logo.navbar-logo {
+        float: left;
+        padding-top: 12px !important;
+    }
   .navbar-custom {
     background: transparent;
     border-bottom: 1px solid transparent;
@@ -155,7 +162,11 @@ hr.small {
 }
 .bgImagePost {
     /*background-image: url('../img/post-bg.jpg');*/
-    background-image: url('../img/macbook-bg.jpg');
+    /*background-image: url('../img/macbook-bg.jpg');*/
+    background-image: url('../img/post-banner-bg.png');
+}
+.site-heading h1, .subheading {
+    text-shadow: 0 3px 8px #000;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -468,11 +479,11 @@ article .post-meta {
     font-style: normal;
 }
 .logo {
-    width: 15%;
+    width: 50px;
 }
 .logo.navbar-logo {
     float: left;
-    padding-top: 10px;
+    padding: 5px;
 }
 
 /* Syntax Highlighting */

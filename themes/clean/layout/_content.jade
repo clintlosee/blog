@@ -11,7 +11,7 @@ if is_home()
                     h2(class='post-title', itemprop='headline')= post.title
                     h3.post-subtitle
                 p.post-meta
-                    | Published on
+                    | Published on&nbsp;
                     time(itemprop='datePublished', datetime= post.date.toISOString())= full_date(new Date(post.date), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(post.date), 'H:mm')
                     | , #{reading_length} min read
                 p(itemprop='text').post-excerpt= post.intro ? post.intro + '...' : post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 220) + '...'
