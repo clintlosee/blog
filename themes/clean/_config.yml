@@ -4,12 +4,13 @@ keywords: "front end, dev, developer, CSS, Development, Software, Web"
 pubkey:
 menu:
   Home: /blog
+  Portfolio: /
   Articles: /blog/articles
-  About: /blog/about
+  Contact: /blog/contact
 
 # Content
 excerpt_link: Read more
 
 # Miscellaneous
 rss: /atom.xml
-google_analytics:
+google_analytics: UA-72252440-1

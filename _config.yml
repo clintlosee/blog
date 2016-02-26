@@ -9,7 +9,7 @@ description: Web Development Ponderings of Clint Losee
 author: Clint Losee
 language: en
 timezone: America/Denver
-copyright: Copyright 2016 DevThirty5
+copyright: Copyright 2016 DevThirty5 | Clint Losee
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -45,7 +45,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: Development
 category_map:
 tag_map:
 
@@ -105,9 +105,9 @@ feed:
 
 # Social
 social:
-    twitter: http://twitter.com
-    facebook: http://facebook.com
-    github: http://github.com
+    twitter: http://twitter.com/ClintLosee
+    facebook: http://facebook.com/Clint.losee
+    github: http://github.com/clintlosee
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
