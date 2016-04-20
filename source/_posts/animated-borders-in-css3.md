@@ -3,7 +3,7 @@ title: Animated Borders in CSS3
 date: 2016-03-08 11:05:20
 intro:
 category: Front-End Development
-tags: CSS3
+tags: CSS3, Animation
 ---
 ![Animated Borders in CSS3](/blog/images/animated-borders-css3.jpg)
 
